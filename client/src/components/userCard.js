@@ -11,9 +11,9 @@ const UserCard = (props) =>{
     }
     return(
         <div className='UserCard'>
-            <h2>{props.User.name}</h2>
-            <p>country: {props.User.country}</p>
-            <p># of Searches: {props.User.searches}</p>
+            <h3 data-testid="username" >{props.User.name}</h3>
+            <p>Country: {props.User.country}</p>
+            <p># of Google Searches: {props.User.searches}</p>
         </div>
     )
 }

@@ -8,7 +8,9 @@ const Users = (props) =>{
         e.preventDefault();
         setDarkMode(!darkMode);
       };
-    
+      var darkStyle = {
+        color: 'black',
+      };
     console.log('Users.js:',props.Users)
     return(
         <>
@@ -19,6 +21,7 @@ const Users = (props) =>{
             className={darkMode ? 'toggle toggled' : 'toggle'}
         />
         </div>
+        {darkMode ? <div data-testid="dark_mode">Dark Mode On</div> : <div data-testid="dark_mode" style={darkStyle}>Dark Mode Off</div>}
         <div className='Users'>
             {props.Users.map((item,index) => (
                 <UserCard User={props.Users[index]} key={props.Users[index].id}/>

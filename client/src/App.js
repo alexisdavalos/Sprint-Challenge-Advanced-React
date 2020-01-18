@@ -38,14 +38,16 @@ class App extends React.Component {
       })
       console.log('Fetching Data from API...', this.state.Users)
     })
-    .catch()
+    .catch(err => {
+      console.log(err);
+    })
 
   }
   //Renders App
   render(){
     return (
       <div className="App">
-        <header className="App-header">
+        <header  data-testid='header' className="App-header">
           <Users Users={this.state.Users}/>
         </header>
       </div>
