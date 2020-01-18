@@ -9,7 +9,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,4 +29,58 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* New Styles */
+h1{
+  color: #282c34;
+}
+.Users{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.UserCard{
+  margin: 5%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background:black;
+  width:400px;
+}
+
+/* Dark Mode */
+.dark_mode{
+  background: #282c34 !important;
+}
+.dark_mode h1{
+  color:white;
+}
+.dark-mode__toggle {
+  background: papayawhip;
+  border-radius: 50px;
+  border: 2px solid black;
+  height: 22px;
+  position: relative;
+  width: 40px;
+}
+.dark-on{
+  background:#282c34 !important;
+  border: 2px solid papayawhip;
+}
+
+.toggle {
+  background: #f68819;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 18px;
+  background: papayawhip;
 }
